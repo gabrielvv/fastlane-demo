@@ -1,0 +1,10 @@
+lane :bonjour do
+
+	UI.success “Bravo !”
+
+	scan(
+		project: “FastLaneDemo.xcodeproj”
+	)
+UI.error “Non pas cool :(“
+
+end
