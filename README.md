@@ -22,3 +22,7 @@
 git config --global --unset user.name
 git config --global --unset user.email
 ```
+
+## Allow Fastlane/Travis to commit on Github
+* create a github Token for “repo” and “admin:repo_hook”
+* set a travis environment variable (more options > settings)

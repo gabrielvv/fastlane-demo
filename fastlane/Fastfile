@@ -1,13 +1,18 @@
 lane :bonjour do
 
-	UI.success “Bravo !”
+  UI.success "Bravo !"
 
-	scan(
-		project: “FastLaneDemo.xcodeproj”
-		code_coverage: true
-	)
-	xciv
+  scan(
+    project: "FastlaneDemo.xcodeproj",
+    code_coverage: true
+  )
+  xcov
 
-UI.error “Non pas cool :(“
+end
+
+lane :deploy do
+
+	version = get_version_number()
+	print version
 
 end
