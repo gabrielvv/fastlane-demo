@@ -4,7 +4,10 @@ lane :bonjour do
 
 	scan(
 		project: “FastLaneDemo.xcodeproj”
+		code_coverage: true
 	)
+	xciv
+
 UI.error “Non pas cool :(“
 
 end
