@@ -11,7 +11,10 @@
 ## [Travis CI](https://travis-ci.org)
 
 * voir l'activité sur Travis par rapport à un OS -> Status
-* ```gem install travis; travis lint; //check si le .travis.yml est conforme```
+```sh
+gem install travis
+travis lint #check si le .travis.yml est conforme
+```
 
 
 ## Code coverage
@@ -34,6 +37,14 @@ git config --global --unset user.email
 ```sh
 brew install git-flow
 git flow init
+# mettre à jour la version dans Xcode
 git flow release start '1.0.0'
 git flow release finish '1.0.0'
+git push --tags
+# ou git push origin <tag_name>
+
 ```
+
+## [Cocoapods](https://cocoapods.org/)
+* [podspec](https://guides.cocoapods.org/syntax/podspec.html)
+* ```pod spec lint```
