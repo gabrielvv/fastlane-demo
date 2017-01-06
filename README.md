@@ -10,8 +10,15 @@
 
 ## Travis CI
 
-Voir l'activité sur Travis par rapport à un OS
--> Status
+* voir l'activité sur Travis par rapport à un OS -> Status
+* ```gem install travis; travis lint; //check si le .travis.yml est conforme```
+
 
 ## Code coverage
 ```gem install xcov```
+
+## Git log out user
+```
+git config --global --unset user.name
+git config --global --unset user.email
+```
